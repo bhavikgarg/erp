@@ -1,0 +1,63 @@
+@CHARSET "ISO-8859-1";
+
+ .bs-glyphicons {
+        padding-left: 0;
+        padding-bottom: 1px;
+        margin-bottom: 20px;
+        list-style: none;
+        overflow: hidden;
+      }
+      .bs-glyphicons li {
+        float: left;
+        width: 15%;
+        height: 80px;
+        padding: 10px;
+        margin: 0 15px 15px 0;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      .bs-glyphicons .glyphicon {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .bs-glyphicons .glyphicon-class {
+        display: block;
+        text-align: center;
+        word-wrap: break-word; /* Help out IE10+ with class names */
+      }
+      .bs-glyphicons li:hover {
+        background-color: #7baf42;
+        color : white;
+      }
+
+      @media (min-width: 768px) {
+        .bs-glyphicons li {
+          width: 12.5%;
+        }
+      }
+
+
+
+
+#external-events .fc-event {
+	margin : 10px;
+	padding : 10px;
+}
+
+#deleteDiv {
+	
+	height : 30px;
+	border : 1px dashed gray;
+}
+#trash{
+		width: 80%;
+		margin-left: 10%;
+		height:60px;
+		line-height: 50px;
+		padding-bottom: 15px;
+		color : red;
+		border : 1px dashed gray;		
+	}

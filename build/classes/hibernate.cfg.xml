@@ -1,0 +1,28 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/erp</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+        <property name="show_sql">true</property>
+        
+        <mapping class = "school.admin.hbm_model.Login"></mapping>
+        <mapping class = "school.admin.hbm_model.ClassMST"></mapping>
+        <mapping class = "school.admin.hbm_model.DivisionMST"></mapping>
+        <mapping class = "school.admin.hbm_model.ReligionMST"></mapping>
+        <mapping class = "school.admin.hbm_model.NationalityMST"></mapping>
+        <mapping class = "school.admin.hbm_model.DesignationMST"></mapping>
+        <mapping class = "school.admin.hbm_model.StateMST"></mapping>
+        <mapping class = "school.admin.hbm_model.SettingsMST"></mapping>
+        <mapping class = "school.admin.hbm_model.EnquiryMST"></mapping>
+        <mapping class = "school.admin.hbm_model.StopMST"></mapping>
+    </session-factory>
+</hibernate-configuration>
